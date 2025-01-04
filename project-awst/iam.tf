@@ -1,6 +1,6 @@
-# Create IAM Role For EC2
+# Create IAM Role
 resource "aws_iam_role" "ec2_role" {
-  name = "ec2_access_for_s3"
+  name = "ec2_access_role_for_s3"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
