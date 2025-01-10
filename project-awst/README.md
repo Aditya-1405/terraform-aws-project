@@ -10,7 +10,8 @@ This project uses Terraform to provision and configure AWS infrastructure, inclu
 4. IAM permissions are required to create resources in AWS (e.g., VPC, EC2, S3, IAM).
 
 ## File Structure
-- `main.tf`: Contains the main Terraform configuration for AWS resources.
+- `ec2.tf`: Contains the Terraform configuration to launch ec2 instance.
+- `vpc.tf` : Contains the configuration to create VPC and its components.
 - `iam.tf`: Defines IAM roles, policies, and instance profiles.
 - `variables.tf`: Declares input variables used in the Terraform configuration.
 - `aws_install.sh`: Script to configure EC2 instances and interact with S3.
